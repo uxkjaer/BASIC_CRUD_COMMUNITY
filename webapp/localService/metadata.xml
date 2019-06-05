@@ -1,0 +1,17 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="S1">
+			<EntityType Name="Address">
+				<Key>
+					<PropertyRef Name="Adrnr"/>
+				</Key>
+				<Property Name="Adrnr" Type="Edm.String" Nullable="false" sap:label=""></Property>
+				<Property Name="Name2" Type="Edm.String" Nullable="false" sap:label=""></Property>
+				<Property Name="City" Type="Edm.String" Nullable="false" sap:label=""></Property>
+			</EntityType>
+			<EntityContainer Name="EC1" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="AddressSet" EntityType="S1.Address"></EntitySet>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
